@@ -1,71 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.header-left-col {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+:root {
 }
 
-.header-right-col {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.header-top {
-  display: flex;
-  justify-content: center;
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
-
-thead {
-  background-color: #dddddd;
-}
-
-.product {
-  display: flex;
-}
-
-.bg-color-blue {
-  background-color: blue;
-  align-items: center;
-}
-
-.bg-color-gray {
-  background-color: gray;
-  align-items: center;
-}
-
-.input-style {
-  border: 1px solid black;
-}
-
-#buttons {
-  top: 5px;
-  left: 10px;
-  border: 1px solid black;
-  cursor: pointer;
-  padding: 2px 5px;
-}
-
-#buttons>input {
-  padding: 10px;
-  display: block;
-  margin-top: 5px;
+p{
+  margin-bottom: 0 !important;
 }

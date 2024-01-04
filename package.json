@@ -1,35 +1,30 @@
 {
-  "name": "sgs-product",
+  "name": "sgs-ecommerce",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
     "start": "next dev",
+    "build": "next build",
     "lint": "next lint"
   },
   "dependencies": {
-    "@stripe/react-stripe-js": "^2.4.0",
-    "@stripe/stripe-js": "^2.2.2",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "bootstrap": "^5.3.2",
     "canvas": "^2.11.2",
-    "fs": "^0.0.1-security",
     "get-svg-colors": "^2.0.1",
     "konva": "^9.3.0",
     "next": "14.0.4",
     "react": "^18",
+    "react-bootstrap": "^2.9.2",
     "react-colorful": "^5.6.1",
     "react-dom": "^18",
     "react-konva": "^18.2.10",
-    "react-konva-to-svg": "^1.0.2",
-    "react-svg": "^16.1.32",
     "use-image": "^1.1.1"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.1",
     "eslint": "^8",
-    "eslint-config-next": "14.0.4",
-    "postcss": "^8",
-    "svg-url-loader": "^8.0.0",
-    "tailwindcss": "^3.3.0"
+    "eslint-config-next": "14.0.4"
   }
 }
