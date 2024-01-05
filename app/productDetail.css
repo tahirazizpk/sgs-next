@@ -61,11 +61,13 @@ thead {
     -webkit-box-direction: normal;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
+    height: 62%;
 }
 
 .editor-preview-container{
     width: 547px;
-    height: 407.68px;
+    /* height: 600.68px; */
+    height: 100%;
     margin: auto;
     max-width: 100%;
     border: 1px dashed black;
@@ -274,6 +276,13 @@ thead {
     background: #fff;
     border: 1px solid #d9d9d9;
 }
+.card-images-one {
+    height: 182px;
+    object-fit: cover;
+    object-position: 100% 0;
+    width: 100%;
+    padding: 10px;
+}
 
 .card-images {
     height: 150px;
@@ -289,6 +298,9 @@ thead {
     width: 33;
 }
 
+.second-width {
+    width: 25%;
+}
 .card-content:hover {
     color: #40a9ff;
     background: #fff;
@@ -322,6 +334,61 @@ thead {
     color: rgb(255, 255, 255);
 }
 
+.tick-active-free span {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 500;
+    background: green !important;
+    line-height: 2;
+    border-radius: 2px;
+    width: 43px;
+}
+.point-fabric {
+    font-size: 14px;
+    border-color: rgb(216, 216, 216);
+    background: rgb(240, 241, 247);
+    padding: 15px 0px;
+    margin-top: 20px;
+    line-height: 0;
+    width: 97%;
+    box-sizing: content-box;
+    flex-direction: column;
+    flex: 0 0 97%;
+    margin: 0.5vh;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
+    cursor: pointer;
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    user-select: none;
+    font-size: 14px;
+    border: 1px solid #d9d9d9;
+}
+
+.steptwo-active .tick-active-free::before {
+    top: 0px;
+    right: 0px;
+    background: rgb(106, 162, 55) !important;
+    font-size: 10px;
+    font-weight: 500;
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: green;
+    border-width: 20px 42px 0px 0px;
+}
+
 .stepone-active .tick-active::after {
     top: 0px;
     left: 0px;
@@ -337,30 +404,19 @@ thead {
 
 
 .card-body-image-second {
-    -webkit-box-flex: 1;
-    -ms-flex: auto;
     flex: auto;
     min-width: 0;
     min-height: 0;
-    /* overflow-y: scroll; */
-    /* background-color: rgb(243, 243, 247); */
+    display: flex;
     padding: 14px 10px;
-    /* height: 286px; */
 }
 
 .card-content-second {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     box-sizing: content-box;
     flex-direction: column;
-    width: 100%;
-    display: block;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 20%;
-
+    width: 97%;
+    flex: 0 0 97%;
+    max-width: 97%;
     margin: 0.5vh;
     line-height: 1.5715;
     position: relative;
@@ -369,20 +425,11 @@ thead {
     white-space: nowrap;
     text-align: center;
     background-image: none;
-    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
     box-shadow: 0 2px 0 rgba(0, 0, 0, .015);
     cursor: pointer;
-    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
     transition: all .3s cubic-bezier(.645, .045, .355, 1);
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    padding: 4px 15px;
     font-size: 14px;
-    border-radius: 2px;
     color: rgba(0, 0, 0, .85);
     background: #fff;
     border: 1px solid #d9d9d9;
@@ -392,7 +439,27 @@ thead {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 20;
+}
+
+.card-images-second {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.shorts-image{
+    object-fit: cover;
+    object-position: 0 100%;
+}
+
+.anticon {
+    display: inline-block;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    vertical-align: -0.125em;
 }
 
 .card-content-second:hover {
@@ -401,12 +468,26 @@ thead {
     border-color: #40a9ff;
 }
 
+
 .steptwo-active {
     border: 1px solid red !important;
     color: black !important;
 }
 
 .steptwo-active .tick-active::after {
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 36px 36px 0px 0px;
+    border-color: rgb(228, 32, 27) transparent transparent;
+}
+
+.point-fabric .tick-active::after {
     top: 0px;
     left: 0px;
     z-index: 1;
