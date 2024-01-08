@@ -55,7 +55,8 @@ thead {
 .left-body {
     display: flex;
     flex-flow: row wrap;
-    height: 62%;
+    height: 590px;
+    /* height: 62%; */
 }
 
 .editor-preview-container {
@@ -222,11 +223,8 @@ thead {
 }
 
 .card-images-one {
-    height: 182px;
-    object-fit: cover;
-    object-position: 100% 0;
+    height: 150px;
     width: 100%;
-    padding: 10px;
 }
 
 .card-images {
@@ -240,7 +238,6 @@ thead {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 33;
 }
 .second-width {
     width: 25%;
@@ -411,8 +408,9 @@ thead {
 .card-images-second {
     height: 150px;
     width: 100%;
-    object-fit: cover;
-    object-position: 100% 0;
+    padding: 5px;
+    object-position: bottom;
+  
 }
 
 .shorts-image{
@@ -471,22 +469,23 @@ thead {
 
 .color-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .outside-jersey {
     width: 48%;
     border: 1px solid rgb(212, 212, 212);
+    background: rgb(248, 249, 251);
     text-align: center;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 2px;
     padding: 0;
     color: rgba(0, 0, 0, .85);
     font-size: 14px;
     line-height: 1.5715;
     list-style: none;
     position: relative;
-    background: #fff;
+   
     border-radius: 10px;
 }
 
@@ -1125,4 +1124,11 @@ thead {
     background: #fff;
     color: #000;
     border: none;
+}
+
+.konva-image{
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
 }
